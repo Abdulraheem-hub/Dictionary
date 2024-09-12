@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700");
+@import url("https://raw.github.com/FortAwesome/Font-Awesome/master/docs/assets/css/font-awesome.min.css");
+html {
+  height: 100%;
+  overflow: hidden;
+  background: hsl(0, 0%, 95%);
+}
+body {
+  font-family: "Staatliches", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Search Bar */
+.search-container {
+  position: absolute;
+  top: 18%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  width: 750px;
+  display: block;
+  margin: 0 auto;
+  padding-right: 100px;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 107%;
+  height: 45px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #d0cfce;
+  outline: none;
+}
+input#search-bar:focus {
+  border: 1px solid #008abf;
+  transition: 0.35s ease;
+  color: #008abf;
+}
+input#search-bar:focus::-webkit-input-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus::-moz-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+input#search-bar:focus:-ms-placeholder {
+  transition: opacity 0.45s ease;
+  opacity: 0;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -62px;
+  right: -99px;
+}
+
+/* Search bar end */
+
+.site-header,
+.article {
+  padding: 1em;
+  transition: padding 0.2s;
+}
+@media (min-width: 33em) {
+  .site-header,
+  .article {
+    padding: 2.8em;
+  }
+}
+
+.site-header {
+  background: #f9f8f9;
+}
+
+.site-title {
+  margin-bottom: 1em;
+}
+@media (min-width: 62em) {
+  .site-title {
+    margin-bottom: 25.2em;
+  }
+}
+
+.title {
+  font-size: 1.4em;
+  margin-bottom: 0.4em;
+  white-space: nowrap;
+}
+.title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 2.8em;
+  border-top: 0.06em solid;
+  margin-left: 0.6em;
+}
+
+.titleH1 {
+  font-size: 3em;
+  margin-bottom: 0.4em;
+  white-space: nowrap;
+  text-align: center;
+  letter-spacing: 10px;
+}
+.titleH1::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 3.9em;
+  border-top: 0.06em solid;
+  margin-left: 0.6em;
+}
+.titleH1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 3.9em;
+  border-top: 0.06em solid;
+  margin-right: 0.6em;
+}
+
+/* ================================CARD================================ */
+a {
+  color: black;
+  text-decoration: none;
+}
+.wrapper {
+  position: absolute;
+  margin: auto;
+  /* top: 0; */
+  right: 0;
+  bottom: 2%;
+  left: 0;
+
+  width: 850px;
+  height: 400px;
+
+  background: hsl(0, 0%, 95%);
+  box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  position: absolute;
+  width: max-content;
+  font-size: 2.875rem;
+
+  white-space: nowrap;
+
+  top: 12%;
+  left: 7%;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+
+  background: black;
+}
+
+/*************/
+.content {
+  position: absolute;
+  font-size: 1.525rem;
+  width: 40%;
+
+  top: 35%;
+  left: 7%;
+}
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50%;
+  height: 100%;
+  /* background-image: url(https://images.unsplash.com/photo-1580707578919-892eb22db615?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG1hbiUyMHBvcnRyYWl0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60); */
+  clip-path: polygon(35% 0%, 100% 0, 100% 100%, 8% 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  z-index: 1;
+}
+
+#socials {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  z-index: 10;
+}
+#socials a {
+  display: inline-block;
+  height: 120px;
+  opacity: 100%;
+  -webkit-animation: fadeInAndUpBig 1.5s forwards;
+  animation: fadeInAndUpBig 1.5s forwards;
+}
+#socials a:nth-child(1) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+#socials a:nth-child(2) {
+  -webkit-animation-delay: 1.1s;
+  animation-delay: 1.1s;
+}
+#socials a:nth-child(3) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+#socials a:nth-child(4) {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+.social-text {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: -6px;
+  padding-left: 10px;
+  z-index: 10;
+}
+
+img {
+  height: 25px;
+  width: 25px;
+}
+.wikiLink {
+  position: absolute;
+  font-size: 1.1rem;
+  width: 40%;
+
+  top: 78%;
+  left: 7%;
+}
+
+/* ==================================LEARN MORE BUTTON===================================== */
+.link {
+  color: #008abf;
+}
